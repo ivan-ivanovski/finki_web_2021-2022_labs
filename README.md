@@ -1,1 +1,1 @@
-# finki_web_2021-2022_labs
+# Example and labs of site
