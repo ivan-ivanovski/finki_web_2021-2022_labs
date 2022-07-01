@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:normal;
+}
+
+body{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    padding:20px 18px;
+    width:100%;
+    height:auto;
+    background-color: whitesmoke;
+}
+nav a{
+    color:black;
+    border-radius:10px;
+    border:1px solid black;
+    padding: 14px 20px;
+    margin:auto 1rem;
+    text-decoration:none;
+    cursor:pointer;
+    font-family:serif;
+    font-size:17px;
+    font-weight:normal;
+}
+.filmovi-main-container{
+    display:block;
+    width:90%;
+    padding:10px;
+    margin:0 auto;
+    text-align:center;
+}
+.filmovi-main-container .filmovi-title{
+    display:block;
+    text-align:center;
+    padding:16px;
+}
+.filmovi-main-container .filmovi{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:center;
+    text-align:left;
+    padding:0;
+    margin: 0 auto;
+
+}
+.filmovi .item{
+    display:block;
+    padding:16px;
+    width:300px;
+    height: 100%;
+    margin:5px;
+    border:1px solid black;
+
+}
+.filmovi .overBackground{
+    z-index: 9999;
+    background-color: indianred;
+    opacity: .2;
+    color: whitesmoke;
+}
+.item .item-title{
+    display:block;
+    padding:10px;
+    text-align:center;
+}
+.item .item-img{
+    display:block;
+    width:100%;
+    height:350px;
+    text-align:center;
+    padding:10px;
+}
+.item-img img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.item .item-description{
+    display: block;
+    padding: 10px;
+}
+.item-description p{
+    font-size:14px;
+    font-family:serif;
+    letter-spacing:1px;
+    text-align:justify;
+}
+
+.item .item-cena{
+    display: block;
+    padding: 0 10px 0 10px;
+}
+.item-cena h3{
+    font-size: 18px;
+    color: crimson;
+}
+.item .dodadi-film{
+    display:block;
+    width:100%;
+    padding:0 10px 0 10px;
+}
+.dodadi-film input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.dodadi-film .btnDodadiFilm{
+    width: 100%;
+    display:block;
+    color:whitesmoke;
+    text-align:center;
+    text-decoration:none;
+    background-color:black;
+    padding:10px;
+    cursor: pointer;
+    border-radius:7px;
+    border: none;
+}
+.btnDodadiFilm:disabled{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.karticka-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin:10px auto;
+    padding: 16px;
+    border:1px solid black;
+}
+.karticka-item{
+    border-bottom: 2px solid coral;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+.karticka-total{
+    padding: 20px;
+    text-align: left;
+}
+
+hr{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    border:3px solid crimson;
+    background: crimson;
+}
+footer{
+    background-color: coral;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+/*SOLID AND EASY RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*GLOBALS*/
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*STYLE OF BODY*/
+body{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #eee;
+}
+/*CONTAINER STYLE*/
+.container{
+    background: #fff;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+/*TOP NAVIGATION STYLE, LOGO STYLE and NAVIGATION STYLE*/
+.top-nav{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+}
+.top-nav .top-nav-logo{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.top-nav-logo img{
+    display: inline;
+    width: 120px;
+    height: 120px;
+}
+.navigation {
+    background: url("../img/navigation-background.jpg") repeat-x;
+    width: 100%;
+    float: left;
+    height: 30px;
+    padding: 4px;
+    margin:20px auto;
+}
+.navigation .nav-list{
+    margin-left: 120px;
+}
+.navigation .nav-list li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+/*MAIN SECTION STYLE USING DISPLAY FLEX, FLEXING ITEMS, STYLE OF ITEMS OF MAIN SECTION, ITEM STYLE FOR IMAGES, TEXTS, HEADING AND ORDERED LIST  */
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 420px;
+    text-align: justify;
+    justify-content: center;
+    align-content: space-evenly;
+}
+main .item{
+    width: 100%;
+    height: auto;
+}
+
+main .item h1{
+    font-size: 26px;
+    text-align: center;
+    color: #92CD00;
+    margin: 20px;
+}
+main p{
+    font-weight: bold;
+    padding-left: 10px; padding-right: 10px;
+    color: #192402;
+}
+
+main ol{
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 10px 30px;
+}
+ol li{
+    list-style-type: -moz-ethiopic-numeric;
+}
+main .item img{
+    width: 100%;
+    height: auto;
+    padding-left: 10px; padding-right: 10px;
+}
+/*CLEAN STYLE OF FOOTER SECTION OF SITE*/
+footer{
+    width: 100%;
+    height: 30px;
+    display: block;
+    color: #fff;
+    background: #81b518;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+footer p{
+    padding: 5px;
+}
