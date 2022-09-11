@@ -1,4 +1,6 @@
 let vkupnoTotal = 0;
+
+//Code that add movie to list, calculate and do sum of price of added movies, show full price 
 function dodadiFilm(element){
     let film=element.closest('.item');
     //console.log(film);
@@ -25,13 +27,13 @@ function dodadiFilm(element){
         let rec = `<div class="karticka-item">
                         <h3>${filmNaslov}</h3>
                         <p>$${cena} x ${kolFilm} = $<span>${filmItemTotalCena}</span></p>
-                        <button class="izbrisiIzbranFilm" onclick="izbrishiIzbranFilm(this)">Izbrisi</button>
+                        <button class="izbrisiIzbranFilm" onclick="izbrishiIzbranFilm(this)">Remove</button>
                     </div>`;
 
 
         kartIznajmenFilm.innerHTML += rec;
 
-        kartickaTotalCena.innerHTML = `Vkupna cena za iznajmeni filmovi:$${vkupnoTotal}`;
+        kartickaTotalCena.innerHTML = `Full price of added movies:$${vkupnoTotal}`;
         //console.log(filmNaslov + " " +kolFilm);
 
 
@@ -41,10 +43,10 @@ function dodadiFilm(element){
         film.classList.add('overBackground');
     }
     else{
-        alert("Mora da imate bar eden film koj sakate da bide dodaden i iznajmen");
+        alert("Number of order movies need to be at least 1 or more. ");
     }
 }
-
+//Code that remove added movie from list, remove one or all movies in list 
 function izbrishiIzbranFilm(element){
     let izbrisiIzbranFilm= element.closest('.karticka-item');
     izbrisiIzbranFilm.remove();
@@ -55,7 +57,7 @@ function izbrishiIzbranFilm(element){
     vkupnoTotal -= izbranFilmVkupnaCena;
     //console.log(vkupnoTotal);
     let kartickaTotalCena = document.querySelector('.karticka-total');
-    kartickaTotalCena.innerHTML = `Vkupna cena za iznajmeni filmovi:$${vkupnoTotal}`;
+    kartickaTotalCena.innerHTML = `Full price of added movies:$${vkupnoTotal}`;
     let izbrisanFilmNaslov = izbrisiIzbranFilm.querySelector('h3').innerText;
     console.log(izbrisanFilmNaslov);
     let filmovi = document.querySelectorAll('.item');
